@@ -21,6 +21,7 @@ namespace WebApplication1.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogError("Method was called");
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
@@ -29,5 +30,17 @@ namespace WebApplication1.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost(Name = "AddNewSummary")]
+
+        public string[] AddNewSummary(string newSummary)
+        {
+            _logger.LogError("New method was called");
+
+            var list = Summaries.ToList();
+            list.Add(newSummary);
+            return list.ToArray();
+        }
+
     }
 }
