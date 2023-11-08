@@ -9,4 +9,15 @@ namespace WebApplication1.Interfaces.GroupsInterfaces
     {
         public Task<Group[]> GetGroupsBySpecAsync(GroupSpecFilter filter, CancellationToken cancellationToken);
     }
+    public class GroupServices : IGroupService
+    {
+
+        private readonly GroupDbContext _dbContext;
+
+        public GroupServices(GroupDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+    }
 }
