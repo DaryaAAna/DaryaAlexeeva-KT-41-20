@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApplication1.Database.Configurations;
+using DaryaAlexeevaKT4120.Database.Configurations;
 
-namespace WebApplication1.Database
+namespace DaryaAlexeevaKT4120.Database
 {
     public class GroupDbContext : DbContext
     {

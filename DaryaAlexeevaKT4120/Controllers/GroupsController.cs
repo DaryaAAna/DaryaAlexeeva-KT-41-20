@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Filters.GroupFilters;
-using WebApplication1.Interfaces.GroupsInterfaces;
+using DaryaAlexeevaKT4120.Filters.GroupFilters;
+using DaryaAlexeevaKT4120.Interfaces.GroupsInterfaces;
 
-namespace WebApplication1.Controllers
+namespace DaryaAlexeevaKT4120.Controllers
 {
     [ApiController]
     [Route("[controller]")]

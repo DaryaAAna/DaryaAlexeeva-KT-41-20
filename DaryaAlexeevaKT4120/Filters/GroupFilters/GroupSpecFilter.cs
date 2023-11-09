@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Filters.GroupFilters
+﻿namespace DaryaAlexeevaKT4120.Filters.GroupFilters
 {
     public class GroupSpecFilter
     {

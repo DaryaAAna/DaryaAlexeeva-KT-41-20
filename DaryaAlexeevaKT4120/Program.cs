@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
-using WebApplication1.Database;
+using DaryaAlexeevaKT4120.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 

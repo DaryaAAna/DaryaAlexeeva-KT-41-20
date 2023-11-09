@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace WebApplication1.Migrations
+namespace DaryaAlexeevaKT4120.Migrations
 {
     /// <inheritdoc />
     public partial class createDatabaseGroup : Migration

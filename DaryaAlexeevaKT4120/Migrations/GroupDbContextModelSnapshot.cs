@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApplication1.Database;
+using DaryaAlexeevaKT4120.Database;
 
 #nullable disable
 
-namespace WebApplication1.Migrations
+namespace DaryaAlexeevaKT4120.Migrations
 {
     [DbContext(typeof(GroupDbContext))]
     partial class GroupDbContextModelSnapshot : ModelSnapshot

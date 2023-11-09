@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using WebApplication1.Database.Helpers;
-using WebApplication1.Models;
+using DaryaAlexeevaKT4120.Database.Helpers;
+using DaryaAlexeevaKT4120.Models;
 
-namespace WebApplication1.Database.Configurations
+namespace DaryaAlexeevaKT4120.Database.Configurations
 {
     public class GroupConfiguration : IEntityTypeConfiguration<Models.Group>
     {

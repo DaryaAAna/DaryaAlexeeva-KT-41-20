@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.ServiceExtensions
+namespace DaryaAlexeevaKT4120.ServiceExtensions
 {
     public class ServiceExtensions : Controller
     {

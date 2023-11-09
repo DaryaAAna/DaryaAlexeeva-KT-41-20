@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Database.Helpers
+﻿namespace DaryaAlexeevaKT4120.Database.Helpers
 {
     public class ColumnType
     {

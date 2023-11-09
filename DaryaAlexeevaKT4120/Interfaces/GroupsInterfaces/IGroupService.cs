@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApplication1.Database;
-using WebApplication1.Filters.GroupFilters;
-using WebApplication1.Models;
+using DaryaAlexeevaKT4120.Database;
+using DaryaAlexeevaKT4120.Filters.GroupFilters;
+using DaryaAlexeevaKT4120.Models;
 
-namespace WebApplication1.Interfaces.GroupsInterfaces
+namespace DaryaAlexeevaKT4120.Interfaces.GroupsInterfaces
 {
     public interface IGroupService
     {
@@ -19,5 +19,9 @@ namespace WebApplication1.Interfaces.GroupsInterfaces
             _dbContext = dbContext;
         }
 
+        public Task<Group[]> GetGroupsBySpecAsync(GroupSpecFilter filter, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
