@@ -9,19 +9,20 @@ namespace DaryaAlexeevaKT4120.Interfaces.GroupsInterfaces
     {
         public Task<Group[]> GetGroupsBySpecAsync(GroupSpecFilter filter, CancellationToken cancellationToken);
     }
-    public class GroupServices : IGroupService
+    public class GroupService : IGroupService
     {
 
         private readonly GroupDbContext _dbContext;
 
-        public GroupServices(GroupDbContext dbContext)
+        public GroupService(GroupDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public Task<Group[]> GetGroupsBySpecAsync(GroupSpecFilter filter, CancellationToken cancellationToken)
+        public Task<Group[]> GetGroupsBySpecAsync(GroupSpecFilter filter, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            var groups = _dbContext.Set<Group>().Where(d => d.Specializations.SpecName == filter.SpecName && d.YearGroup == filter.Year && d.ExistGroup == filter.ExistGroup).ToArrayAsync(cancellationToken);
+            return groups;
         }
     }
 }

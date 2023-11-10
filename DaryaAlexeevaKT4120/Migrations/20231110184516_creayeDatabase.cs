@@ -5,7 +5,7 @@
 namespace DaryaAlexeevaKT4120.Migrations
 {
     /// <inheritdoc />
-    public partial class createDatabaseGroup : Migration
+    public partial class creayeDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -31,7 +31,7 @@ namespace DaryaAlexeevaKT4120.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     num_group = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false, comment: "Номер группы"),
                     group_year = table.Column<int>(type: "int", maxLength: 100, nullable: false, comment: "Год поступления"),
-                    group_exist = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false, comment: "Факт существования группы"),
+                    group_exist = table.Column<bool>(type: "bit", nullable: false, comment: "Факт существования группы"),
                     spec_id = table.Column<int>(type: "int", maxLength: 100, nullable: false, comment: "Идентификатор специальности")
                 },
                 constraints: table =>

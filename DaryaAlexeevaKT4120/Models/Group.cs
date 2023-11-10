@@ -7,6 +7,6 @@
         public int YearGroup { get; set; }
         public bool ExistGroup { get; set; }
         public int SpecId { get; set; }
-        public Specialization? Specialization { get; set; }
+        public Specialization? Specializations { get; set; }
     }
 }

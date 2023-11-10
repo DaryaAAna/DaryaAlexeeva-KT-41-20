@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DaryaAlexeevaKT4120.Interfaces.GroupsInterfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DaryaAlexeevaKT4120.ServiceExtensions
 {
-    public class ServiceExtensions : Controller
+    public static class ServiceExtensions 
     {
-        public IActionResult Index()
+        public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            return View();
+            services.AddScoped<IGroupService, GroupService>();
+
+            return services;
         }
     }
 }

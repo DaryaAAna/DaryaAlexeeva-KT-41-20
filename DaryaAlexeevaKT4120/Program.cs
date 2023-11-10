@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
 using DaryaAlexeevaKT4120.Database;
+using System.Text.Json.Serialization;
+using DaryaAlexeevaKT4120.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +23,10 @@ try
     builder.Services.AddDbContext<GroupDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+    builder.Services.AddControllers().AddJsonOptions(x =>
+               x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+    builder.Services.AddServices();
     var app = builder.Build();
 
     // Configure the HTTP request pipeline.

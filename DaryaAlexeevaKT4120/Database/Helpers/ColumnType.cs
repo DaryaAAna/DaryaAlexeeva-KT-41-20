@@ -6,7 +6,7 @@
         public const string Guid = "uniqueidentifier";
         public const string String = "varchar";
         public const string Text = "text";
-        public const string Bool = "bool";
+        public const string Bool = "bit";
         public const string Int = "int";
         public const string Long = "bigint";
         public const string Decimal = "money";

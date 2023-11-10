@@ -38,7 +38,7 @@ namespace DaryaAlexeevaKT4120.Database.Configurations
             builder.Property(p => p.ExistGroup)
                 .IsRequired()
                 .HasColumnName("group_exist")
-                .HasColumnType(ColumnType.String).HasMaxLength(100)
+                .HasColumnType(ColumnType.Bool)
                 .HasComment("Факт существования группы");
 
             builder.Property(p => p.SpecId)
@@ -48,7 +48,7 @@ namespace DaryaAlexeevaKT4120.Database.Configurations
                 .HasComment("Идентификатор специальности");
 
             builder.ToTable(TableName)
-                .HasOne(p => p.Specialization)
+                .HasOne(p => p.Specializations)
                 .WithMany()
                 .HasForeignKey(p => p.SpecId)
                 .HasConstraintName("fk_f_spec_id")
@@ -57,7 +57,7 @@ namespace DaryaAlexeevaKT4120.Database.Configurations
             builder.ToTable(TableName)
                 .HasIndex(p => p.SpecId, $"idx_{TableName}_fk_f_spec_id");
 
-            builder.Navigation(p => p.Specialization)
+            builder.Navigation(p => p.Specializations)
                 .AutoInclude();
         }
     }
