@@ -4,6 +4,7 @@ using NLog.Web;
 using DaryaAlexeevaKT4120.Database;
 using System.Text.Json.Serialization;
 using DaryaAlexeevaKT4120.ServiceExtensions;
+using DaryaAlexeevaKT4120.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,8 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
     app.UseAuthorization();
 
