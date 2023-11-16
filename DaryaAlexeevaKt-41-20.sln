@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DaryaAlexeevaKT4120", "DaryaAlexeevaKT4120\DaryaAlexeevaKT4120.csproj", "{AF046D01-3FA9-48E8-B099-E829CBA45CDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaryaAlexeevaKt4120.Tests", "DaryaAlexeevaKt4120.Tests\DaryaAlexeevaKt4120.Tests.csproj", "{5C97EEE8-5868-4B8D-A89C-7700E28D0904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AF046D01-3FA9-48E8-B099-E829CBA45CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF046D01-3FA9-48E8-B099-E829CBA45CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF046D01-3FA9-48E8-B099-E829CBA45CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C97EEE8-5868-4B8D-A89C-7700E28D0904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C97EEE8-5868-4B8D-A89C-7700E28D0904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C97EEE8-5868-4B8D-A89C-7700E28D0904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C97EEE8-5868-4B8D-A89C-7700E28D0904}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

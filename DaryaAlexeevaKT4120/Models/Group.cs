@@ -1,4 +1,6 @@
-﻿namespace DaryaAlexeevaKT4120.Models
+﻿using System.Text.RegularExpressions;
+
+namespace DaryaAlexeevaKT4120.Models
 {
     public class Group
     {
@@ -8,5 +10,10 @@
         public bool ExistGroup { get; set; }
         public int SpecId { get; set; }
         public Specialization? Specializations { get; set; }
+
+        public bool IsValidNumberGroup()
+        {
+            return Regex.Match(NumberGroup, @"^[А-Я]*-[0-9]{2}-[0-9]{2}$").Success;
+        }
     }
 }
